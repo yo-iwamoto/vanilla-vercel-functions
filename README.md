@@ -39,16 +39,6 @@ Demo: https://vanilla-vercel-functions.vercel.app/api/edge
 
 Document: https://vercel.com/docs/concepts/functions/edge-functions
 
-### 🚂 express ([implementation](/api/express/index.ts))
-
-You can also use [express](https://github.com/expressjs/express) for more complex routing, or for using various middlewares.
-
-Demo: https://vanilla-vercel-functions.vercel.app/api/express/posts/dynamic-slug
-
-Document: https://vercel.com/guides/using-express-with-vercel
-
-A setting for rewrites in `vercel.json` is required, and it already exists.
-
 ### 🔑 KV ([implementation](/api/kv.ts))
 
 Activate Vercel KV on your dashboard, pull env and set it to .env, then you can access KV!
@@ -58,6 +48,16 @@ Demo: https://vanilla-vercel-functions.vercel.app/api/kv
 Document: https://vercel.com/docs/storage/vercel-kv
 
 **⚠️ Sample visitor-count features is based on `ctx.waitUntil`, but it doesn't seem to work properly on dev server. It would work on production.**
+
+### 🚂 express ([implementation](/api/express/index.ts))
+
+You can also use [express](https://github.com/expressjs/express) for more complex routing, or for using various middlewares.
+
+Demo: https://vanilla-vercel-functions.vercel.app/api/express/posts/dynamic-slug
+
+Document: https://vercel.com/guides/using-express-with-vercel
+
+A setting for rewrites in `vercel.json` is required, and it already exists.
 
 ## Environment Variables
 
