@@ -6,7 +6,6 @@ export const config = {
 
 export default function handler(req: Request) {
   const url = new URL(req.url);
-  console.log({ url });
   const { city } = geolocation(req);
 
   return new Response(`Hello, from ${city} I'm now an Edge Function!`);
