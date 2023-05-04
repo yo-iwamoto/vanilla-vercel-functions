@@ -1,8 +1,10 @@
-# vanilla-vercel-functions
+# 🍦 vanilla-vercel-functions examples
 
 An example project for using Vercel Serverless Functions and Edge Functions with vanilla Node.js (without Next.js).
 
 ## Getting Started
+
+You should install `vercel` CLI, if you haven't installed yet.
 
 ### Setup
 
@@ -20,6 +22,8 @@ Then, you can see your API is running at http://localhost:3000/api/hello.
 ```bash
 vercel deploy
 ```
+
+**By default, project region is set to `hnd1` (Tokyo). You can choose other regions in `vercel.json`**
 
 ## Guides
 
@@ -48,6 +52,8 @@ You can also use [express](https://github.com/expressjs/express) for more comple
 Local URL: http://localhost:3000/api/express/posts/dynamic-slug
 
 Document: https://vercel.com/guides/using-express-with-vercel
+
+A setting for rewrites in `vercel.json` is required, and it already exists.
 
 ## Environment Variables
 

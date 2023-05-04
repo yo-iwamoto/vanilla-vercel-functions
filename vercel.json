@@ -4,5 +4,6 @@
       "source": "/api/express/(.*)",
       "destination": "/api/express"
     }
-  ]
+  ],
+  "regions": ["hnd1"]
 }
