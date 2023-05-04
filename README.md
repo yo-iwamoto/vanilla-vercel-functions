@@ -55,6 +55,14 @@ Document: https://vercel.com/guides/using-express-with-vercel
 
 A setting for rewrites in `vercel.json` is required, and it already exists.
 
+### 🔑 KV
+
+Activate Vercel KV on your dashboard, pull env and set it to .env, then you can access KV!
+
+Local URL: http://localhost:3000/api/kv
+
+Document: https://vercel.com/docs/storage/vercel-kv
+
 ## Environment Variables
 
 You can use `.env` file locally.
