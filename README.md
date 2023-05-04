@@ -21,21 +21,33 @@ Then, you can see your API is running at http://localhost:3000/api/hello.
 vercel deploy
 ```
 
-## 🚀 Serverless Functions
+## Guides
+
+### 🚀 Serverless Functions
 
 [/api/hello.ts](/api/hello.ts)
 
-Try: http://localhost:3000/api/hello
+Local URL: http://localhost:3000/api/hello
 
-Docs: https://vercel.com/docs/concepts/functions/serverless-functions
+Document: https://vercel.com/docs/concepts/functions/serverless-functions
 
-## ⚡️ Edge Functions
+### ⚡️ Edge Functions
 
 [/api/edge.ts](/api/edge.ts)
 
-Try: http://localhost:3000/api/edge
+Local URL: http://localhost:3000/api/edge
 
-Docs: https://vercel.com/docs/concepts/functions/edge-functions
+Document: https://vercel.com/docs/concepts/functions/edge-functions
+
+### 🚂 express
+
+You can also use [express](https://github.com/expressjs/express) for more complex routing, or for using various middlewares.
+
+[/api/express/index.ts](/api/express/index.ts)
+
+Local URL: http://localhost:3000/api/express/posts/dynamic-slug
+
+Document: https://vercel.com/guides/using-express-with-vercel
 
 ## Environment Variables
 
