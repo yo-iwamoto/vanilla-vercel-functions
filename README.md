@@ -73,4 +73,4 @@ In production, you should set environment variables via `vercel env` command, or
 
 Vercel support static file serving in `public` directory (by default).
 
-Demo: https://vanilla-vercel-functions.vercel.app/author.png
+Demo: https://vanilla-vercel-functions.vercel.app/author.jpg
