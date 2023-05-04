@@ -4,5 +4,6 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   res.status(200).json({
     message: 'Hello world!',
     cookies: req.cookies,
+    envVar: process.env.API_KEY,
   });
 }
