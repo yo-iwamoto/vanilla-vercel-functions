@@ -27,41 +27,37 @@ vercel deploy
 
 ## Guides
 
-### 🚀 Serverless Functions
+### 🚀 Serverless Functions ([implementation](/api/hello.ts))
 
-[/api/hello.ts](/api/hello.ts)
-
-Local URL: http://localhost:3000/api/hello
+Demo: https://vanilla-vercel-functions.vercel.app/api/hello
 
 Document: https://vercel.com/docs/concepts/functions/serverless-functions
 
-### ⚡️ Edge Functions
+### ⚡️ Edge Functions ([implementation](/api/edge.ts))
 
-[/api/edge.ts](/api/edge.ts)
-
-Local URL: http://localhost:3000/api/edge
+Demo: https://vanilla-vercel-functions.vercel.app/api/edge
 
 Document: https://vercel.com/docs/concepts/functions/edge-functions
 
-### 🚂 express
+### 🚂 express ([implementation](/api/express/index.ts))
 
 You can also use [express](https://github.com/expressjs/express) for more complex routing, or for using various middlewares.
 
-[/api/express/index.ts](/api/express/index.ts)
-
-Local URL: http://localhost:3000/api/express/posts/dynamic-slug
+Demo: https://vanilla-vercel-functions.vercel.app/api/express/posts/dynamic-slug
 
 Document: https://vercel.com/guides/using-express-with-vercel
 
 A setting for rewrites in `vercel.json` is required, and it already exists.
 
-### 🔑 KV
+### 🔑 KV ([implementation](/api/kv.ts))
 
 Activate Vercel KV on your dashboard, pull env and set it to .env, then you can access KV!
 
-Local URL: http://localhost:3000/api/kv
+Demo: https://vanilla-vercel-functions.vercel.app/api/kv
 
 Document: https://vercel.com/docs/storage/vercel-kv
+
+**⚠️ Sample visitor-count features is based on `ctx.waitUntil`, but it doesn't seem to work properly on dev server. It would work on production.**
 
 ## Environment Variables
 
@@ -71,4 +67,10 @@ You can use `.env` file locally.
 cp .env.example .env
 ```
 
-In production, you should set environment variables via `vercel env` command.
+In production, you should set environment variables via `vercel env` command, or on dashboard.
+
+## Static Files
+
+Vercel support static file serving in `public` directory (by default).
+
+Demo: https://vanilla-vercel-functions.vercel.app/author.png
