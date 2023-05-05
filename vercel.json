@@ -9,7 +9,5 @@
       "destination": "/api/hono"
     }
   ],
-  "regions": [
-    "hnd1"
-  ]
+  "regions": ["hnd1"]
 }
