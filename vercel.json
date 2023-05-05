@@ -3,7 +3,13 @@
     {
       "source": "/api/express/(.*)",
       "destination": "/api/express"
+    },
+    {
+      "source": "/api/hono/(.*)",
+      "destination": "/api/hono"
     }
   ],
-  "regions": ["hnd1"]
+  "regions": [
+    "hnd1"
+  ]
 }
